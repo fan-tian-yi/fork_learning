@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class OrderService {
 
     /** 满减门槛 */
-    private static final BigDecimal FULL_AMOUNT = new BigDecimal("299");
+    private static final BigDecimal FULL_AMOUNT = new BigDecimal("399");
 
     /** 满减金额 */
     private static final BigDecimal REDUCE_AMOUNT = new BigDecimal("30");
@@ -28,7 +28,7 @@ public class OrderService {
             throw new IllegalArgumentException("参数不合法");
         }
         BigDecimal total = unitPrice.multiply(BigDecimal.valueOf(quantity));
-        // 满减：满 299 减 20
+        // 满减：满 199 减 20
         if (total.compareTo(FULL_AMOUNT) >= 0) {
             total = total.subtract(REDUCE_AMOUNT);
         }
