@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class OrderService {
 
     /** 满减门槛 */
-    private static final BigDecimal FULL_AMOUNT = new BigDecimal("199");
+    private static final BigDecimal FULL_AMOUNT = new BigDecimal("399");
 
     /** 满减金额 */
     private static final BigDecimal REDUCE_AMOUNT = new BigDecimal("20");
