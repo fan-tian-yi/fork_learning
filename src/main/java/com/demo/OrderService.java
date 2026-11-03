@@ -14,7 +14,7 @@ public class OrderService {
     private static final BigDecimal FULL_AMOUNT = new BigDecimal("299");
 
     /** 满减金额 */
-    private static final BigDecimal REDUCE_AMOUNT = new BigDecimal("20");
+    private static final BigDecimal REDUCE_AMOUNT = new BigDecimal("30");
 
     /**
      * 计算订单应付金额。
